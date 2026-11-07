@@ -181,7 +181,6 @@ class MainGui(ctk.CTk):
                 hover_color="#1E293B",
                 corner_radius=8,
                 height=30,
-                takefocus=False,
                 command=lambda tid=tab_id: self._select_tab(tid)
             )
             btn.pack(side="left", padx=4, pady=4, expand=True, fill="x")
@@ -307,7 +306,6 @@ class MainGui(ctk.CTk):
             fg_color="#0284c7",
             hover_color="#0369a1",
             height=32,
-            takefocus=False,
             command=self._open_roi_picker
         )
         set_btn.pack(side="left", padx=(0, 4), expand=True, fill="x")
@@ -319,7 +317,6 @@ class MainGui(ctk.CTk):
             fg_color="#0f766e",
             hover_color="#115e59",
             height=32,
-            takefocus=False,
             command=self._test_ocr_scan
         )
         test_ocr_btn.pack(side="left", padx=(4, 0), expand=True, fill="x")
@@ -402,7 +399,6 @@ class MainGui(ctk.CTk):
             fg_color="#1e293b",
             hover_color="#334155",
             height=28,
-            takefocus=False,
             command=lambda: self._set_hud_preset(280, 450)
         ).pack(side="left", padx=2, expand=True, fill="x")
 
@@ -413,7 +409,6 @@ class MainGui(ctk.CTk):
             fg_color="#1e293b",
             hover_color="#334155",
             height=28,
-            takefocus=False,
             command=lambda: self._set_hud_preset(340, 580)
         ).pack(side="left", padx=2, expand=True, fill="x")
 
@@ -424,7 +419,6 @@ class MainGui(ctk.CTk):
             fg_color="#1e293b",
             hover_color="#334155",
             height=28,
-            takefocus=False,
             command=lambda: self._set_hud_preset(420, 700)
         ).pack(side="left", padx=2, expand=True, fill="x")
 
@@ -439,7 +433,6 @@ class MainGui(ctk.CTk):
             fg_color="#0284c7",
             hover_color="#0369a1",
             height=34,
-            takefocus=False,
             command=self._toggle_hud
         ).pack(fill="x")
 
@@ -580,7 +573,6 @@ class MainGui(ctk.CTk):
             hover_color="#0369a1",
             width=150,
             height=30,
-            takefocus=False,
             command=self._test_api_connection
         )
         test_btn.pack(side="right", padx=12, pady=8)
@@ -626,7 +618,6 @@ class MainGui(ctk.CTk):
             hover_color="#0369a1",
             width=150,
             height=30,
-            takefocus=False,
             command=self._manual_check_update
         )
         self.check_update_btn.pack(side="left", padx=(0, 6))
@@ -639,7 +630,6 @@ class MainGui(ctk.CTk):
             hover_color="#047857",
             width=150,
             height=30,
-            takefocus=False,
             command=self._start_update_process
         )
         # Not packed initially, packed into up_btn_box when update is detected!
@@ -838,7 +828,6 @@ class MainGui(ctk.CTk):
             border_color="#475569",
             width=135,
             height=26,
-            takefocus=False,
             command=self.clear_logs
         )
         clear_log_btn.pack(side="right", padx=2)
